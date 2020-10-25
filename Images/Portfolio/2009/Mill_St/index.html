@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A2K Design</title>
+
+<link href="../../../main.css" rel="stylesheet" type="text/css" />
+<link href="../../../shadowbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--[if IE 5]>
+    <style type="text/css"> 
+    .twoColFixRt #sidebar1 { width: 220px; }
+    </style>
+<![endif]-->
+
+<!--[if IE]>
+    <style type="text/css"> 
+    .twoColFixRt #sidebar1 { padding-top: 30px; }
+    .twoColFixRt #mainContent { zoom: 1; }
+    </style>
+<![endif]-->
+
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/shadowbox.js"></script>
+
+<script type="text/javascript">
+Shadowbox.init({
+    handleOversize: "resize",
+
+	overlayOpacity: "0.7"
+});
+</script>
+
+
+<script>
+
+
+
+$(document).ready(function() {
+
+	
+			
+			
+			$("a[id*='_trigger']").click(function(){
+				var this_id = $(this).attr('id').substr(0, $(this).attr('id').length - 8);
+				$('div#mainContent').hide();
+				$('div#'+this_id).fadeTo('slow', 1);
+				this.blur();
+				<!--$('div#'+this_id).slideToggle('fast'); -->
+				<!--$('div#deleteall').slideUp('fast'); -->
+				<!--$(this).html("<div id=\"taskbar\">Don't Add New Password</div>"); -->
+				return false;
+			});
+			
+			
+			$('.thumb').each(function(){
+				$(this).fadeTo(100, 0.7);
+			});
+		
+			$('.thumb').mouseover(function(){
+				$(this).fadeTo(100, 1);
+			});
+			
+			$('.thumb').mouseout(function(){
+				$(this).fadeTo(100, 1);
+				$(this).stop();
+				$(this).fadeTo(500, 0.7);
+			});
+			
+
+
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready( function()
+{
+   PEPS.rollover.init();
+});
+PEPS = {};
+PEPS.rollover =
+{
+   init: function()
+   {
+      this.preload();
+ 
+      $(".ro").hover(
+         function () { $(this).attr( 'src', PEPS.rollover.newimage($(this).attr('src')) ); },
+         function () { $(this).attr( 'src', PEPS.rollover.oldimage($(this).attr('src')) ); }
+      );
+   },
+   preload: function()
+   {
+      $(window).bind('load', function() {
+         $('.ro').each( function( key, elm ) { $('<img>').attr( 'src', PEPS.rollover.newimage( $(this).attr('src') ) ); });
+      });
+   },   
+   newimage: function( src )
+   {
+      return src.substring( 0, src.search(/(\.[a-z]+)$/) ) + '_over' + src.match(/(\.[a-z]+)$/)[0];
+   },
+   oldimage: function( src )
+   {
+      return src.replace(/_over\./, '.');
+   }
+};
+
+</script>
+
+
+
+
+</head>
+
+<body class="twoColFixRt">
+
+
+  
+<div id="header">
+    <div id="navigation">
+    	<ul>
+        	<li><a id="navPortfolio" href="../../../#portfolio"><img src="../../../images/navGOBACK.png" class="ro"></a></li>
+        </ul>
+    </div>
+<!-- end #header --></div>
+
+
+<div id="container">
+
+  <div id="sidebar1">
+  	<div class="sidebarContent" id="sidebarPortfolio">
+        <p>Move your mouse over the image to see details</p>
+    </div>
+    
+  <!-- end #sidebar1 --></div>
+    
+  
+  
+  
+  
+<div id="mainPortfolio" style="display:block">
+  		<div style="position:absolute; background:#FFF; display:block; filter:alpha(opacity=1); opacity:0; width:100px; height:100px;">
+		</div>
+		<ul>	
+            <H2>Portfolio &middot; Mill Street</H2><br />
+            
+    	<li><a href="img/MS_01.jpg" rel="shadowbox[MS]"><img class="thumb" src="thumbs/MS_01.jpg"
+            onmouseover="$('div#sidebarPortfolio').html('<p>50 year old bungalow in a park near a lake. Charming place.</p>'); return false;"
+            onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+       
+    	<li><a href="img/MS_02.jpg" rel="shadowbox[MS]"><img class="thumb" src="thumbs/MS_02.jpg"
+            onmouseover="$('div#sidebarPortfolio').html('<p>One and half thousand square feet of gross area will be converted...</p>'); return false;"
+            onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+            
+     	<li><a href="img/MS_03.jpg" rel="shadowbox[MS]"><img class="thumb" src="thumbs/MS_03.jpg"
+            onmouseover="$('div#sidebarPortfolio').html('<p>... in an almost same area cozy fairytale house of a dream.</p>'); return false;"
+            onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+            
+            
+            
+            
+  <!-- end #mainPortfolio --></div>
+
+  
+  <br class="clearfloat" />
+  
+<div id="footer">
+<img src="../../../images/footerMiniLogo.png" alt="A2K"> Created by A2K design group, 2010. All rights reserved.
+<!-- end #footer --></div>
+
+<!-- end #container --></div>
+</body>
+</html>

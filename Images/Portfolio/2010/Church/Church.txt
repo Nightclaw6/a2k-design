@@ -1,0 +1,7 @@
+Church_01   Existing Russian Orthodox Church Building in Toronto. Front view.
+
+Church_02   Side view.
+
+Church_03    Proposed extension of the left side.
+
+Church_04    Proposed extension of the right side.

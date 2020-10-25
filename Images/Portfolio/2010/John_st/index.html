@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A2K Design</title>
+
+<link href="../../../main.css" rel="stylesheet" type="text/css" />
+<link href="../../../shadowbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--[if IE 5]>
+    <style type="text/css"> 
+    .twoColFixRt #sidebar1 { width: 220px; }
+    </style>
+<![endif]-->
+
+<!--[if IE]>
+    <style type="text/css"> 
+    .twoColFixRt #sidebar1 { padding-top: 30px; }
+    .twoColFixRt #mainContent { zoom: 1; }
+    </style>
+<![endif]-->
+
+<script type="text/javascript" src="../../../js/jquery.js"></script>
+<script type="text/javascript" src="../../../js/shadowbox.js"></script>
+
+<script type="text/javascript">
+Shadowbox.init({
+    handleOversize: "resize",
+
+	overlayOpacity: "0.7"
+});
+</script>
+
+<script>
+
+
+
+$(document).ready(function() {
+
+	
+			
+			
+			$("a[id*='_trigger']").click(function(){
+				var this_id = $(this).attr('id').substr(0, $(this).attr('id').length - 8);
+				$('div#mainContent').hide();
+				$('div#'+this_id).fadeTo('slow', 1);
+				this.blur();
+				<!--$('div#'+this_id).slideToggle('fast'); -->
+				<!--$('div#deleteall').slideUp('fast'); -->
+				<!--$(this).html("<div id=\"taskbar\">Don't Add New Password</div>"); -->
+				return false;
+			});
+			
+			
+			$('.thumb').each(function(){
+				$(this).fadeTo(100, 0.7);
+			});
+		
+			$('.thumb').mouseover(function(){
+				$(this).fadeTo(100, 1);
+			});
+			
+			$('.thumb').mouseout(function(){
+				$(this).fadeTo(100, 1);
+				$(this).stop();
+				$(this).fadeTo(500, 0.7);
+			});
+			
+
+
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready( function()
+{
+   PEPS.rollover.init();
+});
+PEPS = {};
+PEPS.rollover =
+{
+   init: function()
+   {
+      this.preload();
+ 
+      $(".ro").hover(
+         function () { $(this).attr( 'src', PEPS.rollover.newimage($(this).attr('src')) ); },
+         function () { $(this).attr( 'src', PEPS.rollover.oldimage($(this).attr('src')) ); }
+      );
+   },
+   preload: function()
+   {
+      $(window).bind('load', function() {
+         $('.ro').each( function( key, elm ) { $('<img>').attr( 'src', PEPS.rollover.newimage( $(this).attr('src') ) ); });
+      });
+   },   
+   newimage: function( src )
+   {
+      return src.substring( 0, src.search(/(\.[a-z]+)$/) ) + '_over' + src.match(/(\.[a-z]+)$/)[0];
+   },
+   oldimage: function( src )
+   {
+      return src.replace(/_over\./, '.');
+   }
+};
+
+</script>
+
+
+
+
+</head>
+
+<body class="twoColFixRt">
+
+
+  
+<div id="header">
+    <div id="navigation">
+    	<ul>
+        	<li><a id="navPortfolio" href="../../../#portfolio"><img src="../../../images/navGOBACK.png" class="ro"></a></li>
+        </ul>
+    </div>
+<!-- end #header --></div>
+
+
+<div id="container">
+
+  <div id="sidebar1">
+  	<div class="sidebarContent" id="sidebarPortfolio">
+        <p>Move your mouse over the image to see details</p>
+    </div>
+    
+  <!-- end #sidebar1 --></div>
+    
+  
+  
+  
+<div id="mainPortfolio" style="display:block">
+  		<div style="position:absolute; background:#FFF; display:block; filter:alpha(opacity=1); opacity:0; width:100px; height:100px;">
+		</div>
+		<ul>	
+            <H2>Portfolio &middot; John Street.</H2><br />
+            
+    	<li><a href="img/J_01.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_01.jpg"
+            onmouseover="$('div#sidebarPortfolio').html('<p>Historical District. Old Thornhill. One of Ontario&acute;s earliest settlements, dating from the original construction of Yonge Street.</p>'); return false;"
+            onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+       
+	    <li><a href="img/J_02.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_02.jpg"
+	        onmouseover="$('div#sidebarPortfolio').html('<p>Circular Driveway. Sketch.</p>'); return false;"
+	        onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+	    <li><a href="img/J_03.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_03.jpg"
+	        onmouseover="$('div#sidebarPortfolio').html('<p>Heritage Board, Step One. Tudor Style.</p>'); return false;"
+	        onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+	 	<li><a href="img/J_04.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_04.jpg"
+		    onmouseover="$('div#sidebarPortfolio').html('<p>Rear Elevation.</p>'); return false;"
+		    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+	    <li><a href="img/J_05.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_05.jpg"
+		    onmouseover="$('div#sidebarPortfolio').html('<p>Ground Floor Extension.</p>'); return false;"
+		    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+		<li><a href="img/J_06.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_06.jpg"
+			onmouseover="$('div#sidebarPortfolio').html('<p>Second Floor Extension. Sketch 1.</p>'); return false;"
+			onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+            
+	    	<li><a href="img/J_07.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_07.jpg"
+	            onmouseover="$('div#sidebarPortfolio').html('<p>Second Floor Extension. Sketch 2.</p>'); return false;"
+	            onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+		    <li><a href="img/J_09.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_09.jpg"
+		        onmouseover="$('div#sidebarPortfolio').html('<p>Ground. Preliminary.</p>'); return false;"
+		        onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+		 	<li><a href="img/J_10.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_10.jpg"
+			    onmouseover="$('div#sidebarPortfolio').html('<p>Front Elevation. Preliminary.</p>'); return false;"
+			    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+		    <li><a href="img/J_11.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_11.jpg"
+			    onmouseover="$('div#sidebarPortfolio').html('<p>Streetscapes for Heritage Committee. Milestones. #1</p>'); return false;"
+			    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+				
+				
+				<li><a href="img/J_13.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_13.jpg"
+			        onmouseover="$('div#sidebarPortfolio').html('<p>Streetscapes for Heritage Committee. Milestones. #2</p>'); return false;"
+			        onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+			 	<li><a href="img/J_14.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_14.jpg"
+				    onmouseover="$('div#sidebarPortfolio').html('<p>Streetscapes for Heritage Committee. Milestones. #3</p>'); return false;"
+				    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+			    <li><a href="img/J_15.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_15.jpg"
+				    onmouseover="$('div#sidebarPortfolio').html('<p>Heritage Board, Step Two. Art &amp; Craft.</p>'); return false;"
+				    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+				<li><a href="img/J_16.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_16.jpg"
+					onmouseover="$('div#sidebarPortfolio').html('<p>Step Three. Detailed.</p>'); return false;"
+					onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+			   	<li><a href="img/J_17.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_17.jpg"
+			        onmouseover="$('div#sidebarPortfolio').html('<p>Demolition.</p>'); return false;"
+	            	onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+
+			    <li><a href="img/J_18.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_18.jpg"
+			        onmouseover="$('div#sidebarPortfolio').html('<p>Excavation. Beginning.</p>'); return false;"
+			        onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li> 
+			
+				<li><a href="img/J_20.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_20.jpg"
+				    onmouseover="$('div#sidebarPortfolio').html('<p>Foundation. Porch.</p>'); return false;"
+				    onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+				
+				<li><a href="img/J_21.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_21.jpg"
+					onmouseover="$('div#sidebarPortfolio').html('<p>Foundation. Walkout.</p>'); return false;"
+					onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>  
+					
+				<li><a href="img/J_22.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_22.jpg"
+					onmouseover="$('div#sidebarPortfolio').html('<p>Ground Floor. Garage.</p>'); return false;"
+					onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+					
+				<li><a href="img/J_23.jpg" rel="shadowbox[JO]"><img class="thumb" src="thumbs/J_23.jpg"
+					onmouseover="$('div#sidebarPortfolio').html('<p>In a week.</p>'); return false;"
+					onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+						
+											       
+  <!-- end #mainPortfolio --></div>
+
+  
+  <br class="clearfloat" />
+  
+<div id="footer">
+<img src="../../../images/footerMiniLogo.png" alt="A2K"> Created by A2K design group, 2010. All rights reserved.
+<!-- end #footer --></div>
+
+<!-- end #container --></div>
+</body>
+</html>
