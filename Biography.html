@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styling.css">
     <title>A2K - V2</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#mySidebar" data-offset="10">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="D:\Documents\WebDev\Projects\A2K - Redesign Project\index.html">
-                <img src="Images/headerLogo.png" alt="A2K">
+                <img src="Images/logo.png" alt="A2K">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,14 +39,14 @@
         </div>
     </nav>
 
-    <div class="sidenav">
-      <a href="#">Education</a>
-      <a href="#">Career</a>
-      <a href="#">1983–1994</a>
-      <a href="#">1995–1998</a>
-      <a href="#">1999–2002</a>
-      <a href="#">2002-2004</a>
-      <a href="#">2004-PRESENT</a>
+    <div class="sidenav" id="mySidebar">
+      <a href="#education">Education</a>
+      <a href="#career">Career</a>
+      <a href="#1983">1983–1994</a>
+      <a href="#1995">1995–1998</a>
+      <a href="#1999">1999–2002</a>
+      <a href="#2002">2002-2004</a>
+      <a href="#2004">2004-PRESENT</a>
     </div>
 
     <div class="container mainContent" >
@@ -62,7 +62,7 @@ Member of Interior Decor Resources of Canada (former WWFA)<br /><br />
 <span class="title">Occupation:</span>
 &nbsp;Architectural and Interior Designer<br /><br /></p>
 
-<p><strong>EARLY LIFE AND EDUCATION</strong></p>
+<p id="education"><strong>EARLY LIFE AND EDUCATION</strong></p>
 <p>Andriy was born in Kiev, beautiful ancient city on picturesque coasts of Dnepr river,<br />
 capital of Ukraine, when he pursued undergraduate studies at the Art School.</p>
 <p> </p>
@@ -71,8 +71,8 @@ capital of Ukraine, when he pursued undergraduate studies at the Art School.</p>
   complex in Crimea”, he started his architecture and interior design practice.</p>
 <p>&nbsp;</p>
 
-<p><strong>CAREER</strong></p>
-<p><strong>1983 –1994</strong> <em>ARCHITECT, KIEV ZONAL SCIENTIFIC RESEARCH AND PROJECT INSTITUTE, Ukraine.</em><br />
+<p id="career"><strong>CAREER</strong></p>
+<p id="1983"><strong>1983 –1994</strong> <em>ARCHITECT, KIEV ZONAL SCIENTIFIC RESEARCH AND PROJECT INSTITUTE, Ukraine.</em><br />
 </p>
 <p>Participation in multitude of projects including:</p>
 <p>- Business Center and 2 high-end class Hotels in the big industrial City of Zaporozhe, Grand Prix winning project of 1993 International Design Tender Competition in collaboration with Canadian Company Cole, Sherman.<br />
@@ -86,7 +86,7 @@ capital of Ukraine, when he pursued undergraduate studies at the Art School.</p>
   <li>Member of the Union of the Architects of Ukraine since 1989.</li>
 </ul>
 <p>&nbsp;</p>
-<p><strong>1995 –1998</strong> <em>CHIEF ARCHITECT of the GOLDEN GATE CORPORATION in Kiev, Ukraine</em></p>
+<p id="1995"><strong>1995 –1998</strong> <em>CHIEF ARCHITECT of the GOLDEN GATE CORPORATION in Kiev, Ukraine</em></p>
 <p>Special Accomplishments:</p>
 <p>- Site Plan Development for Ukrainian biggest VIP Gated Community in Kiev suburb Koncha-Zaspa(1995-1997)<br />
   - Concept Design for new type of single family residential dwellings for mass<br />
@@ -99,7 +99,7 @@ capital of Ukraine, when he pursued undergraduate studies at the Art School.</p>
   <li>Participated in Ukrainian Intellectual Elite Golden Pages Book.</li>
 </ul>
 <p>&nbsp;</p>
-<p><strong>1999 – 2002</strong><em> PARTNER / LEAD ARCHITECT of GARAZD GROUP ARCHITECTURE, Kiev, Ukraine</em></p>
+<p id="1999"><strong>1999 – 2002</strong><em> PARTNER / LEAD ARCHITECT of GARAZD GROUP ARCHITECTURE, Kiev, Ukraine</em></p>
 <p>Design team that specializes and exclusively deals with Embassies and International Contractors.<br />
 Projects of interest:</p>
 <p>- New building for the Dutch Embassy in collaboration with Atelier PRO<br />
@@ -114,7 +114,7 @@ Projects of interest:</p>
   <li>Ukrainian Golden Elite Book Club member (2005)</li>
 </ul>
 <p>&nbsp;</p>
-<p><strong>2002 - 2004</strong> <em>LEAD ARCHITECTURAL DESIGNER, LUXTERIOR Design Corporation</em></p>
+<p id="2002"><strong>2002 - 2004</strong> <em>LEAD ARCHITECTURAL DESIGNER, LUXTERIOR Design Corporation</em></p>
 <p>Toronto based design-build company with wide range various design projects from kitchen furniture to high-end residential and commercial interiors.</p>
 <p>Projects:</p>
 <p>- Conceptual design of Senior's recreational center in Cascade Estates Village<br />
@@ -125,7 +125,7 @@ Projects of interest:</p>
 <p>- Hilton Recreation Center Renovation in Markham<br />
   - Jewellery Stores in Promenade and Don Mills Mall and Cafes in Washington DC</p>
 <p>&nbsp;</p>
-<p><strong>2004 - PRESENT</strong> <em>PRINCIPAL / ARCHITECTURAL INTERIOR DESIGNER of A2K DESIGN, Toronto.</em></p>
+<p id="2004"><strong>2004 - PRESENT</strong> <em>PRINCIPAL / ARCHITECTURAL INTERIOR DESIGNER of A2K DESIGN, Toronto.</em></p>
 <p>More than hundred various residential and commercial projects including:</p>
 <p>- Villa on Bayview and Steels, Thornhill 1 (2004)<br />
   - North York Residence 2 on Yorkview (2005)<br />
@@ -186,7 +186,7 @@ Projects of interest:</p>
     
 
     <div id="footer">
-        <img src="Images/footerMiniLogo.png" alt="A2K"> Created by A2K design group, 2010. All rights reserved.
+        <img id="footerImg" src="Images/footerMiniLogo.png" alt="A2K"> Created by A2K design group, 2010. All rights reserved.
     </div>
 
 
