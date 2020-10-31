@@ -11,8 +11,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="Images/headerLogo.png" alt="A2K">
+            <a class="navbar-brand" href="D:\Documents\WebDev\Projects\A2K - Redesign Project\index.html">
+                <img src="Images/logo.png" alt="A2K">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="D:\Documents\WebDev\Projects\A2K - Redesign Project\index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="D:\Documents\WebDev\Projects\A2K - Redesign Project\Biography.html">Biography</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="D:\Documents\WebDev\Projects\A2K - Redesign Project\Portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -39,77 +39,58 @@
         </div>
     </nav>
 
-    <div id="mainPortfolio">
-        <div style="position:absolute; background:#FFF; display:block; filter:alpha(opacity=1); opacity:0; width:100px; height:100px;">
-      </div>
-      <ul>	
-          <H2>2010</H2>
-      <li><a href="portfolio/2010/Kennard_Ave/index.html"><img class="thumb" src="Images/Portfolio/2010/Kennard_Ave/thumbs/kennard_av_04.jpg"/></a></li>
-          
-      <li><a href="portfolio/2010/Church/index.html"><img class="thumb" src="portfolio/2010/Church/thumbs/Church_02.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Church</H3><p>Existing Russian Orthodox Church Building in Toronto.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+    <section>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="2008">2008</li>
+            <li class="list" data-filter="2009">2009</li>
+            <li class="list" data-filter="2010">2010</li>
+        </ul>
+    </section>
 
-      <li><a href="portfolio/2010/Brawley_Ave/index.html"><img class="thumb" src="portfolio/2010/Brawley_Ave/thumbs/brawley_05.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Brawley Avenue</H3><p>Residential building</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
-          
-      <li><a href="portfolio/2010/Searle_Ave_2/index.html"><img class="thumb" src="portfolio/2010/Searle_Ave_2/thumbs/S2-08.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Searle Avenue 2</H3><p>New approach of the old bungalow</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
-          
-      <li><a href="portfolio/2010/John_st/index.html"><img class="thumb" src="portfolio/2010/John_st/thumbs/J_15.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>John Street</H3><p>Building in Historical District, Old Thornhill.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
-          
-          
-      <li><a href="portfolio/2010/Deanbank_dr/index.html"><img class="thumb" src="portfolio/2010/Deanbank_dr/thumbs/DB-11.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Deanbank drive</H3><p>Sixty year old two thousand square feet bungalow with detouched garage.<br />Complete renovation and addition.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>                        
-          <br class="clearfloat" />
-          <br />  
-          
-          
-          <H2>2009</H2>
-      <li><a href="portfolio/2009/Cottage_R_n_A/index.html"><img class="thumb" src="portfolio/2009/Cottage_R_n_A/thumbs/Cottage_RnA_02.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Cottage R &amp; A</H3><p>Beautiful tiny cottage near river.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
-          
-      <li><a href="portfolio/2009/Comanche/index.html"><img class="thumb" src="portfolio/2009/Comanche/thumbs/Comanche_Road_05.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Comanche Road</H3><p> </p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+    <div class="projects">
+        <div class="itemBox 2008"><img src="Images/Portfolio/2008/Bicycle_Factory/img/BF-02.jpg"></div>
+        <div class="itemBox 2008"><img src="Images/Portfolio/2008/Collingwood/img/Alta_Rd_10.jpg"></div>
+        <div class="itemBox 2009"><img src="Images/Portfolio/2009/Chapel/ch_01.jpg"></div>
+        <div class="itemBox 2009"><img src="Images/Portfolio/2009/Comanche/img/Comanche_Road_01.jpg"></div>
+        <div class="itemBox 2009"><img src="Images/Portfolio/2009/Cottage_R_n_A/img/Cottage_RnA_01.jpg"></div>
+        <div class="itemBox 2009"><img src="Images/Portfolio/2009/Mill_St/img/MS_01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/Brawley_Ave/img/brawley_01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/Church/img/Church_01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/Deanbank_dr/img/DB-01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/John_st/img/J_01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/Kennard_Ave/img/kennard_av_01.jpg"></div>
+        <div class="itemBox 2010"><img src="Images/Portfolio/2010/Searle_Ave_2/img/S2-01.jpg"></div>
+    </div>
 
-       <li><a href="portfolio/2009/Mill_St/index.html"><img class="thumb" src="portfolio/2009/Mill_St/thumbs/MS_03.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Mill Street</H3><p>50 year old bungalow by the lake in a park.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>            
-              
-          <br class="clearfloat" />
-          <br />  
-          
-                
-          <H2>2008</H2>
-      <li><a href="portfolio/2008/Collingwood/index.html"><img class="thumb" src="portfolio/2008/Collingwood/thumbs/Alta_Rd_10.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Collingwood</H3><p>Resort style mounting sky oriented well equipped bungalow with loft.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
+    <div id="footer">
+        <img id="footerImg" src="Images/footerMiniLogo.png" alt="A2K"> Created by A2K design group, 2010. All rights reserved.
+    </div>
 
 
-       <li><a href="portfolio/2008/Bicycle_Factory/index.html"><img class="thumb" src="portfolio/2008/Bicycle_Factory/thumbs/BF-02.jpg"
-          onmouseover="$('div#sidebarPortfolio').html('<H3>Bicycle Factory.</H3><p>Concept for Office Building in Kiev.</p>'); return false;"
-          onmouseout="$('div#sidebarPortfolio').html('<p>Move your mouse over the image to see details</p>'); return false;"/></a></li>
-
-          
-  </ul>
-<!-- end #mainPortfolio --></div>
-
-
-
-
-
+    
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show('1000');
+                } else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            });
+            $('.list').click(function() {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
 </body>
 </html>
