@@ -1,24 +1,16 @@
 body {
-	/* background: lightgray; */
 	background-color: #e9ecef;
-	font-family: 'Vollkorn', serif;
+	font-family: helvetica, arial, sans-serif;
+	line-height: 16px;
 	position: relative;
 }
 
-/* * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-/* .navbar {
-	position: fixed-top;
-} */
 a.nav-link {
 	font-weight: bold;
 }
 .navbar navbar-expand-lg navbar-light bg-light fixed-top .container img {
 	background-color: white !important;
-	height: 60px;
+	height: 7rem;
 }
 
 #navbarSupportedContent a.nav-link:hover,
@@ -26,9 +18,23 @@ a.nav-link {
 	color: #f93b03;
 }
 
+.navbar-brand img {
+	scale: 80%
+}
+
 .mainContent {
-	margin-top: 50px;
 	padding: 4rem 2rem;
+}
+.tabStyle {
+	padding-left: 138px;
+}
+.tabStyle1 {
+	padding-left: 120px;
+}
+
+.container #mainImg {
+	width: 44rem;
+	height: 25rem;
 }
 
 .mainBio {
@@ -36,30 +42,22 @@ a.nav-link {
 	padding: 4rem 2rem;
 }
 
-img {
+#images {
 	height: 70px;
 	width: auto;
 }
-/* #mainBiography {
-	margin-top: 150px;
-	/* padding: 4rem 2rem; */
-/* margin-left: 160px; /* Same as the width of the sidebar */
-/* padding: 0px 10px; */
-/* border-top: solid 5px black; */
-/* left: 70px; */
-/* margin: 0 auto; */
-/* text-align: left; */
-/* position: absolute; */
 
 section {
 	padding: 20px;
-	width: 1280px;
-	margin: 100px auto;
+	width: 100%;
+	margin: 50px auto;
 }
 
 section ul {
 	display: flex;
 	margin-bottom: 10px;
+	width: 100%;
+	justify-content: center;
 }
 
 section ul li {
@@ -71,7 +69,7 @@ section ul li {
 	cursor: pointer;
 }
 
-section ul li.active {
+section ul li.active,section ul li:hover {
 	background: #03a9f4;
 	color: #fff;
 }
@@ -79,50 +77,55 @@ section ul li.active {
 .projects {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
 
-.projects .itemBox {
+.projects .itembox {
 	position: relative;
 	width: 300px;
 	height: 300px;
-	margin: 5px;
+	margin: 10px;
+	flex: 1 1 15%;
 }
 
-.projects .itemBox img {
+.projects .img-fluid {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	
 }
 
-#footer {
+.footer {
+	position: fixed-bottom;
+	width: 100%;
+	left: 0;
+	bottom: 0;
 	color: black;
-	font-size: small;
+	font-size: large;
 	text-align: center;
-	border-top: solid 1px #ccc;
-	margin: 60px 220px 0 0;
+	/* border-top: solid 1px #ccc; */
+	margin: 30px;
+	padding: 10px;
 }
 
-#footerImg {
-	height: auto;
-}
 
 .sidenav {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 160px; /* Set the width of the sidebar */
-	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
+	/* height: 100%; */
+	width: 10rem; 
+	position: fixed; 
+	z-index: 1; 
+	top: 0; 
 	left: 0;
 	background-color: #e9ecef;
-	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-x: hidden; 
 	padding-top: 20px;
-	margin-top: 200px;
+	margin-top: 25%;
 }
 
-/* The navigation menu links */
 .sidenav a {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
@@ -133,7 +136,12 @@ section ul li.active {
 	background-color: #e9ecef;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
 	color: #f93b03;
+}
+
+@media screen and (max-width: 1400px) {
+	.sidenav {
+		display: none;
+	}
 }
